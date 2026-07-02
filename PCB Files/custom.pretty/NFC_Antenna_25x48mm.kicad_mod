@@ -1,0 +1,40 @@
+(footprint "NFC_Antenna_25x48mm" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "25x48mm rectangular NFC/RFID antenna coil, 4 turns, 13.56 MHz. Trace 0.8mm, gap 0.5mm, pitch 1.3mm. Pad 1 = outer terminal, Pad 2 = inner terminal. Pad 2 is inside the coil area and requires a via + B.Cu trace (or 0R jumper) to route out to your NFC IC.")
+  (tags "NFC RFID antenna rectangular 25x48 13.56MHz HF coil")
+  (attr smd)
+
+  (fp_text reference "ANT1" (at 0 -15.5) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "NFC_Antenna_25x48mm" (at 0 16) (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (pad "1" smd rect (at -24 -12.5) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "2" smd rect (at -20.1 -8.6) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+
+  (fp_line (start -24 -12.5) (end 24 -12.5) (layer "F.Cu") (width 0.8))
+  (fp_line (start 24 -12.5) (end 24 12.5) (layer "F.Cu") (width 0.8))
+  (fp_line (start 24 12.5) (end -24 12.5) (layer "F.Cu") (width 0.8))
+  (fp_line (start -24 12.5) (end -24 -11.2) (layer "F.Cu") (width 0.8))
+
+  (fp_line (start -24 -11.2) (end 22.7 -11.2) (layer "F.Cu") (width 0.8))
+  (fp_line (start 22.7 -11.2) (end 22.7 11.2) (layer "F.Cu") (width 0.8))
+  (fp_line (start 22.7 11.2) (end -22.7 11.2) (layer "F.Cu") (width 0.8))
+  (fp_line (start -22.7 11.2) (end -22.7 -9.9) (layer "F.Cu") (width 0.8))
+
+  (fp_line (start -22.7 -9.9) (end 21.4 -9.9) (layer "F.Cu") (width 0.8))
+  (fp_line (start 21.4 -9.9) (end 21.4 9.9) (layer "F.Cu") (width 0.8))
+  (fp_line (start 21.4 9.9) (end -21.4 9.9) (layer "F.Cu") (width 0.8))
+  (fp_line (start -21.4 9.9) (end -21.4 -8.6) (layer "F.Cu") (width 0.8))
+
+  (fp_line (start -21.4 -8.6) (end 20.1 -8.6) (layer "F.Cu") (width 0.8))
+  (fp_line (start 20.1 -8.6) (end 20.1 8.6) (layer "F.Cu") (width 0.8))
+  (fp_line (start 20.1 8.6) (end -20.1 8.6) (layer "F.Cu") (width 0.8))
+  (fp_line (start -20.1 8.6) (end -20.1 -8.6) (layer "F.Cu") (width 0.8))
+
+  (fp_rect (start -25 -13.5) (end 25 13.5) (layer "F.SilkS") (width 0.12) (fill none))
+  (fp_rect (start -26 -14) (end 26 14) (layer "F.Courtyard") (width 0.05) (fill none))
+  (fp_rect (start -24 -12.5) (end 24 12.5) (layer "F.Fab") (width 0.1) (fill none))
+)
